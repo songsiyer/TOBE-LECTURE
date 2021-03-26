@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs
+/ConsoleApplication1/Debug
+*.vcxproj
+*.filters
+*.user
+*.sln
+/Debug
