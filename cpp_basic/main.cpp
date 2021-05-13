@@ -1,10 +1,22 @@
 #include <iostream>
+#include <thread>
 #include "cpp_basic.h"
 //c++ stl 위키 https://ko.wikipedia.org/wiki/%ED%91%9C%EC%A4%80_%ED%85%9C%ED%94%8C%EB%A6%BF_%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC
 using namespace std;
 
+bool thread_run;
+void counter() {
+	int i = 0;
+	while (thread_run) {
+		cout << "thread Counter Running -- " << i++ << endl;
+		this_thread::sleep_for(chrono::milliseconds(1000));
+	}
+}
+
 int main() {
 	using namespace lll;
+	thread_run = true;
+	thread thread_test = thread(counter);
 	vector<cpp_basic> test_vector;
 	int size;
 	cout << "입력해라 숫자 : ";
@@ -43,6 +55,7 @@ int main() {
 	catch (int exception) {
 		cout << "ERROR (error code :" <<exception << ")" << endl;
 	}
-
+	thread_run = false;
+	thread_test.join();
 	return 0;
 }
