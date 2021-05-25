@@ -7,10 +7,10 @@ using namespace lll;
 		b = 'k';
 		c = "asdasdasd";
 	}
+
 	cpp_basic::~cpp_basic() {
 
 	}
-
 
 	cpp_basic cpp_basic::operator<<(const int add)
 	{

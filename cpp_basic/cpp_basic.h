@@ -19,8 +19,15 @@ namespace lll {
 		~cpp_basic(); // 소멸자 & 정적할당 동적할당 설명
 		cpp_basic operator<<(const int add);
 		bool operator<(const cpp_basic &compare) const;
+		void set_a(int a) {
+			this->a = a;
+		}
+		int get_a() {
+			return a;
+		}
 		void someFunction();
 		void 어려운함수(int a);
+		
 	};
 }
 
