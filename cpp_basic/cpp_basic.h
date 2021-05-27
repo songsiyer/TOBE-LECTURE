@@ -14,6 +14,8 @@ namespace lll {
 		int a;
 		char b;
 		std::string c;
+	protected :
+		int aa;
 	public :
 		cpp_basic(); // 생성자
 		~cpp_basic(); // 소멸자 & 정적할당 동적할당 설명
@@ -27,7 +29,15 @@ namespace lll {
 		}
 		void someFunction();
 		void 어려운함수(int a);
-		
+	};
+
+	class sangsock : public cpp_basic { //inheritance
+	private :
+		std::vector<int> val;
+	public :
+		sangsock();
+		void someFunction() ;
+		bool operator<(const sangsock& compare) const;
 	};
 }
 

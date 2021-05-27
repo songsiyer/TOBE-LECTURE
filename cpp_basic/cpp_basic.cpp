@@ -4,6 +4,7 @@ using namespace lll;
 
 	cpp_basic::cpp_basic() {
 		a = 0;
+		aa = 100;
 		b = 'k';
 		c = "asdasdasd";
 	}
@@ -32,3 +33,18 @@ using namespace lll;
 
 	}
 
+	sangsock::sangsock() : cpp_basic()
+	{
+		val.push_back(aa); //a´Â ¾ÈµÊ ¿Ö?
+		someFunction();
+	}
+
+	void sangsock::someFunction()
+	{
+		std::cout << "vector aa : " << val.at(0) << std::endl;
+	}
+
+	bool sangsock::operator<(const sangsock& compare) const
+	{
+		return (val.at(0) < compare.val.at(0));
+	}
