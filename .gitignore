@@ -8,3 +8,12 @@
 /cpp_basic
 /project_tetris/Debug
 /test
+/socker_client/Debug/socker_client.tlog
+/socker_client/Debug
+/socker_client/socker_client.vcxproj.user
+/socker_client/socker_client.vcxproj.filters
+/socker_client/socker_client.vcxproj
+/socket_server/Debug
+/socket_server/socket_server.vcxproj.user
+/socket_server/socket_server.vcxproj.filters
+/socket_server/socket_server.vcxproj

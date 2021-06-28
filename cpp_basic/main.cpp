@@ -35,11 +35,11 @@ int main() {
 	using namespace lll;
 	thread_run = true;
 	//thread thread_test = thread(counter);
-	thread thread_test1 = thread(threadAdd, 1);
-	thread thread_test2 = thread(threadAdd, 2);
-	thread thread_test3 = thread(threadAdd, 3);
-	thread thread_test4 = thread(threadAdd, 4);
-	thread thread_test5 = thread(threadAdd, 5);
+	//thread thread_test1 = thread(threadAdd, 1);
+	//thread thread_test2 = thread(threadAdd, 2);
+	//thread thread_test3 = thread(threadAdd, 3);
+	//thread thread_test4 = thread(threadAdd, 4);
+	//thread thread_test5 = thread(threadAdd, 5);
 
 	ifstream fileReader;
 	fileReader.open("c:\\aaaaa.txt");
@@ -55,10 +55,23 @@ int main() {
 	}
 	fileReader.close();
 
+	ofstream fileWriter;
+	fileWriter.open("c:\\test.txt");
+	srand((unsigned)time(NULL));
+	if (fileWriter.is_open()) {
+		for (int i = 0; i < 3000; i++) {
+			int num = rand();
+			fileWriter << num << " ";
+		}
+
+	}
+	else {
+		cout << "파일 열기 실패 - " << endl;
+	}
 
 	vector<cpp_basic> test_vector;
 	int size;
-	cout << "입력해라 숫자 : ";
+	cout << "입력해라 숫자 : " ;
 	cin >> size;
 	for (int i = 0; i < size; i++) {
 		cpp_basic temp_class;
@@ -73,7 +86,7 @@ int main() {
 		cout << "current vector iterator - " << i << endl;
 		test_vector.at(i).someFunction();
 	}
-
+	cout << "list - " << endl;
 	list<cpp_basic> test_list;
 	list<cpp_basic>::iterator list_iter;
 	for (int i = size; i > 0; i--) {
@@ -99,11 +112,11 @@ int main() {
 	}
 
 	thread_run = false;
-	thread_test1.join();
-	thread_test2.join();
-	thread_test3.join();
-	thread_test4.join();
-	thread_test5.join();
+	//thread_test1.join();
+	//thread_test2.join();
+	//thread_test3.join();
+	//thread_test4.join();
+	//thread_test5.join();
 	cout << total_value << endl;
 	//thread_test.join();
 	return 0;

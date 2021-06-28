@@ -8,10 +8,10 @@
 #include <deque>
 
 namespace lll {
-	class cpp_basic
+	class cpp_basic 
 	{
 	private :
-		int a;
+		int a=3;
 		char b;
 		std::string c;
 	protected :
@@ -24,10 +24,10 @@ namespace lll {
 		void set_a(int a) {
 			this->a = a;
 		}
-		int get_a() {
+		int get_a(){
 			return a;
 		}
-		void someFunction();
+		virtual void someFunction();
 		void 어려운함수(int a);
 	};
 
@@ -36,7 +36,7 @@ namespace lll {
 		std::vector<int> val;
 	public :
 		sangsock();
-		void someFunction() ;
+		void someFunction();
 		bool operator<(const sangsock& compare) const;
 	};
 }
