@@ -17,3 +17,7 @@
 /socket_server/socket_server.vcxproj.user
 /socket_server/socket_server.vcxproj.filters
 /socket_server/socket_server.vcxproj
+/multiTetris_client/Debug
+/multiTetris_client/multiTetris_client.vcxproj.user
+/multiTetris_client/multiTetris_client.vcxproj.filters
+/multiTetris_client/multiTetris_client.vcxproj

@@ -1,11 +1,11 @@
 #pragma comment(lib, "ws2_32")
+
 #include <stdio.h>
 #include <iostream>
 #include <vector>
 #include <thread>
 #include <WinSock2.h>
 #include <WS2tcpip.h>
-
 
 #define BUFFERSIZE 1024
 #define PORT 12312

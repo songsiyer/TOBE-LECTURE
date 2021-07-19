@@ -77,7 +77,6 @@ int main() {
 		cpp_basic temp_class;
 		test_vector.push_back(temp_class<<i);
 	}
-
 	sangsock s;
 	test_vector.push_back(s<< 1);
 	s.someFunction();
