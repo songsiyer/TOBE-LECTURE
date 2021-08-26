@@ -1,4 +1,9 @@
 #pragma once
+#include <Windows.h>
+#include <time.h>
+
+#include "tetrisData.h"
+
 class block
 {
 private :
@@ -11,14 +16,10 @@ public :
 	block();
 	~block();
 
+	void initial();
 	void move(int x_pos, int y_pos);
 	void rotate();
 	void dropDown();
-
-
-
-
-
 
 	/********************get - set*********************/
 	int getXpos() {
@@ -43,6 +44,7 @@ public :
 		return this->block_type;
 	}
 	void setBlockType(int block_type) {
+		
 		this->block_type = block_type;
 	}
 	/**************************************************/

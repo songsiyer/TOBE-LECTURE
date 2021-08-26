@@ -1,6 +1,8 @@
 #pragma once
 #include "block.h"
+#include "tetrisData.h"
 #include <vector>
+#include <iostream>
 
 class mapData
 {
@@ -20,6 +22,7 @@ public:
 
 	bool checkBlock(block block, int x_add_pos, int y_add_pos);
 	bool putBlock(block block); // y값 최하단으로 이동후 맵에 넣는다.
+	block getShadowBlock(block block);
 	std::vector<int> checkLine();
 
 
