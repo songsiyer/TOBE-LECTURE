@@ -1,0 +1,45 @@
+﻿<Window x:Class="calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculator"
+        mc:Ignorable="d"
+        Title="계산기" Height="473.2" Width="422.4">
+    <Grid >
+        <TextBox x:Name="num_textbox" HorizontalAlignment="Left" Height="81" Margin="10,10,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="392" TextAlignment="Right" FontSize="48"/>
+        <Button Content="x^2" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+        <Button x:Name="num7" Content="7" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="7" Click="numPadClick"/>
+        <Button x:Name="num4" Content="4" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="4" Click="numPadClick"/>
+        <Button x:Name="num1" Content="1" HorizontalAlignment="Left" Margin="10,308,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="1" Click="numPadClick"/>
+        <Button Content="+/-" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+        <Button x:Name="clear" Content="C" HorizontalAlignment="Left" Margin="111,113,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Click="clear_Click"/>
+        <Button x:Name="num8" Content="8" HorizontalAlignment="Left" Margin="111,178,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="8" Click="numPadClick"/>
+        <Button x:Name="num5" Content="5" HorizontalAlignment="Left" Margin="111,243,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="5" Click="numPadClick"/>
+        <Button x:Name="num2" Content="2" HorizontalAlignment="Left" Margin="111,308,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="2" Click="numPadClick"/>
+        <Button x:Name="num0" Content="0" HorizontalAlignment="Left" Margin="111,373,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Click="numPadClick" Tag="0"/>
+        <Button x:Name="back" Content="&lt;-" HorizontalAlignment="Left" Margin="213,114,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Click="back_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images.jpg">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="39" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="num9" Content="9" HorizontalAlignment="Left" Margin="213,179,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="9" Click="numPadClick"/>
+        <Button x:Name="num6" Content="6" HorizontalAlignment="Left" Margin="213,244,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="6" Click="numPadClick"/>
+        <Button x:Name="num3" Content="3" HorizontalAlignment="Left" Margin="213,309,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20" Tag="3" Click="numPadClick"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="213,374,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+        <Button Content="÷" HorizontalAlignment="Left" Margin="316,114,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="316,179,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="316,244,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="316,309,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="316,374,0,0" VerticalAlignment="Top" Width="86" Height="60" FontSize="20"/>
+    </Grid>
+</Window>
