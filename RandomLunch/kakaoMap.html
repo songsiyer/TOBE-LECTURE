@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+    html, body {
+        width: 99%;
+        height: 98%;
+    }
+</style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="map" style="width:100%; height:100%; "> </div>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=9fa31b69027f89204a3443f6ce6e06bf&libraries=services"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), mapOption = { center: new kakao.maps.LatLng(33.450701, 126.570667), level: 4 };
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        function moveTo(lat, lng) {
+            var loc = new kakao.maps.LatLng(lat, lng);
+            map.setCenter(loc);
+        }
+
+        function panTo(lat, lng) {
+            var loc = new kakao.maps.LatLng(lat, lng);
+            map.panTo(loc);
+        }
+
+        function zoomIn() {
+            var level = map.getLevel();
+            map.setLevel(level - 1);
+        }
+
+        function zoomOut() {
+            var level = map.getLevel();
+            map.setLevel(level + 1);
+        }
+
+    </script>
+</body>
+</html>
