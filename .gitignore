@@ -25,3 +25,11 @@
 /RandomLunch/bin/Debug
 /RandomLunch/obj/Debug
 /RandomLunch/Properties
+/calculator/obj
+/mqttBasic/bin/Debug
+/mqttBasic/obj/Debug
+/mqttBasic/Properties
+/packages/M2Mqtt.4.3.0.0
+/RandomLunch/bin/Release
+/RandomLunch/obj/Release
+/RandomLunch/Resources

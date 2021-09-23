@@ -24,6 +24,7 @@
         function moveTo(lat, lng) {
             var loc = new kakao.maps.LatLng(lat, lng);
             map.setCenter(loc);
+            
         }
 
         function panTo(lat, lng) {
@@ -32,6 +33,7 @@
         }
 
         function zoomIn() {
+            
             var level = map.getLevel();
             map.setLevel(level - 1);
         }

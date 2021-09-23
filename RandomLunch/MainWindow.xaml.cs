@@ -26,6 +26,7 @@ namespace RandomLunch
     /// https://devstarsj.github.io/development/2016/06/11/CSharp.NewtonJSON/ newtonsoft JSON 사용법
     /// https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section microsoft edge webview2 사용시 필요한 런타임
     /// </summary>
+    
     public partial class MainWindow : Window
     {
         object[] arr;
@@ -33,9 +34,9 @@ namespace RandomLunch
         {
             InitializeComponent();
 
-            int a = 3;
             string html = "kakaoMap.html";
             string curDir = Directory.GetCurrentDirectory();
+            Uri tmp = new Uri(String.Format("file:///{0}/" + html, curDir));
             mapBrowser.Navigate(new Uri(String.Format("file:///{0}/" + html, curDir)));
             mapBrowser2.Source = new Uri(String.Format("file:///{0}/" + html, curDir));
         }
@@ -46,10 +47,13 @@ namespace RandomLunch
             string query = string.Format("{0}?query={1}", site, area);
 
             WebRequest request = WebRequest.Create(query); // 요청 생성. 
+
+
             string api_key = "90d9791d2ef73b7bae5812948708898f"; // Rest API 인증키 입력.
             string header = "KakaoAK " + api_key;
-
             request.Headers.Add("Authorization", header); // HTTP 헤더 "Authorization" 에 header 값 설정. 
+
+
             WebResponse response = request.GetResponse(); // 요청을 보내고 응답 객체를 받는다. 
 
             Stream stream = response.GetResponseStream(); // 응답객체의 결과물
@@ -69,6 +73,8 @@ namespace RandomLunch
             JavaScriptSerializer js = new JavaScriptSerializer(); // (Reference 에 System.Web.Extensions.dll 을 추가해야한다)
             var dob = js.Deserialize<dynamic>(json);
             var docs = dob["documents"];
+
+            
             object[] buf = docs;
             int length = buf.Length;
             for (int i = 0; i < length; i++)

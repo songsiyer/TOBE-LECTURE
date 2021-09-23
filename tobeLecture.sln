@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator", "calculator\ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomLunch", "RandomLunch\RandomLunch.csproj", "{518C10D8-BE2D-4FF3-8B93-E7AC3E16712A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mqttBasic", "mqttBasic\mqttBasic.csproj", "{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,18 @@ Global
 		{518C10D8-BE2D-4FF3-8B93-E7AC3E16712A}.Release|x64.Build.0 = Release|Any CPU
 		{518C10D8-BE2D-4FF3-8B93-E7AC3E16712A}.Release|x86.ActiveCfg = Release|Any CPU
 		{518C10D8-BE2D-4FF3-8B93-E7AC3E16712A}.Release|x86.Build.0 = Release|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Debug|x64.Build.0 = Debug|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Debug|x86.Build.0 = Debug|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Release|x64.ActiveCfg = Release|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Release|x64.Build.0 = Release|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{3EE7DE8B-6ADB-4B4A-82E2-3060F33FA2D1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
